@@ -31,7 +31,12 @@ class Router{
             return;
         }
 
-        
+        $action = $route[$url];
+
+        if(is_callable($action)){
+            call_user_func($action);
+        }
+
 
     }
 
