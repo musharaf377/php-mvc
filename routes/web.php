@@ -1,11 +1,11 @@
 <?php
 
+use App\Controllers\HomeController;
 use app\Core\Router;
 
+// Router::get('/', [HomeController::class, 'index']);
 
-Router::get('/', function(){
-    echo "<h1>this is Home page. </h1>";
-});
+Router::get('/', 'HomeController@index');
 
 Router::get('/about', function(){
     echo "<h1>this is about us page. </h1>";

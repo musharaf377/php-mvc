@@ -1,6 +1,7 @@
 <?php 
 
 require __DIR__. '/../app/Core/Router.php';
+require __DIR__. '/../app/Core/Controller.php';
 require __DIR__. '/../routes/web.php';
 
 use App\Core\Router;
